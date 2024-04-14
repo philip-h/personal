@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/output.css">
+  <title>/usr/philiph/projects</title>
+</head>
+
+<body class="bg-nord-0 text-nord-6">
+  <nav class="h-16 flex justify-around box-border">
+    <a href="/"
+      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/</a>
+    <a href="/projects" class="px-4 h-full flex items-center border-b-4 border-nord-7">~/projects</a>
+    <a href="/blog"
+      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/blog</a>
+    <a href="/contact"
+      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/contact</a>
+  </nav>
+
+  <main class="container mx-auto flex flex-col gap-8 md:pt-16">
+
+    <!-- card -->
+    <div class="bg-nord-3 rounded-lg shadow-lg p-4 flex flex-col relative">
+      <div class="flex gap-8">
+        <!-- <img src="/imgs/me.webp" width="50" alt="me" class="rounded-full"> -->
+        <div class="size-[52px] bg-nord-11 rounded-full"></div>
+        <div>
+          <h3 class="text-lg font-bold">
+            <a href="http://philiph.dev" target="_blank" class="underline hover:text-nord-8">PYCS↗</a>
+          </h3>
+          <p class="text-nord-6 text-opacity-50">
+            Python + Flask + SQLite
+          </p>
+        </div>
+      </div>
+      <div class="overflow-y-hidden transition-[max-height] duration-300 max-h-0" data-projects="more-info">
+        <p><br>More text below Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro inventore ullam itaque
+          alias pariatur voluptates? Placeat voluptas cum natus? Voluptatibus eum eaque nisi magnam corrupti aspernatur
+          sequi adipisci optio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, qui. Earum
+          soluta modi voluptatem possimus dolores voluptatum est, eaque veritatis labore atque ipsam magni vel deserunt
+          minus, quae veniam iure.</p>
+      </div>
+      <button data-projects="more-info-button"
+        class="absolute right-4 bottom-4 font-bold stroke-nord-6 rounded-full hover:bg-nord-4 hover:stroke-nord-3 transition-[colors,_transform] duration-300 flex items-center justify-center">
+        <svg class="pointer-events-none" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="m7 10 5 5 5-5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div> <!-- !card -->
+
+    <!-- card -->
+    <div class="bg-nord-3 rounded-lg shadow-lg p-4 flex flex-col relative">
+      <div class="flex gap-8">
+        <!-- <img src="/imgs/me.webp" width="50" alt="me" class="rounded-full"> -->
+        <div class="size-[52px] bg-nord-15 rounded-full"></div>
+        <div>
+          <h3 class="text-lg font-bold">
+            <a href="http://ezpz.netlify.app" target="_blank" class="underline hover:text-nord-8">FollowThrough↗</a>
+          </h3>
+          <p class="text-nord-6 text-opacity-50">
+            Laravel + Python + OpenCV
+          </p>
+        </div>
+      </div>
+      <div class="overflow-y-hidden transition-[max-height] duration-300 max-h-0" data-projects="more-info">
+        <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro inventore ullam itaque
+          alias pariatur voluptates? Placeat voluptas cum natus? Voluptatibus eum eaque nisi magnam corrupti aspernatur
+          sequi adipisci optio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, qui. Earum
+          soluta modi voluptatem possimus dolores voluptatum est, eaque veritatis labore atque ipsam magni vel deserunt
+          minus, quae veniam iure.</p>
+      </div>
+      <button data-projects="more-info-button"
+        class="absolute right-4 bottom-4 font-bold stroke-nord-6 rounded-full hover:bg-nord-4 hover:stroke-nord-3 transition-[colors,_transform] duration-300 flex items-center justify-center">
+        <svg class="pointer-events-none" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="m7 10 5 5 5-5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div> <!-- !card -->
+
+
+
+  </main>
+</body>
+<script src="/js/projects.js"></script>
+
+</html>
