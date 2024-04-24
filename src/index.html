@@ -9,29 +9,63 @@
 </head>
 
 <body class="bg-nord-0 text-nord-6">
-  <nav class="h-16 flex justify-around box-border">
-    <a href="/" class="px-4 h-full flex items-center border-b-4 border-nord-7">~/</a>
-    <a href="/projects"
-      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/projects</a>
-    <a href="/blog"
-      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/blog</a>
-    <a href="/contact" class=" px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7
-      transition">~/contact</a>
+  <nav class="flex flex-col md:flex-row bg-nord-3 p-4 font-mono group">
+    <div class="flex justify-between">
+      <h2 class="font-mono text-2xl font-bold">
+        <a href="/" class="text-nord-8">PHILIPH.DEV/</a>
+      </h2>
+      <div class="rounded-full p-2 transition-transform group-hover:rotate-180 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6 pointer-events-none">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex-grow 
+          grid transition-[grid-template-rows] grid-rows-[0fr] group-hover:grid-rows-[1fr] md:grid-rows-1">
+
+      <ul class="flex flex-col md:flex-row justify-around
+            before:content-['.'] md:before:content-none overflow-hidden">
+        <li class="before:content-['├───'] before:text-nord-8 md:before:content-none">
+          <a href="/" class="text-nord-8">index.html</a>
+        </li>
+        <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+          <a href="/projects" class="font-bold">
+            projects/
+            <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+          </a>
+        </li>
+        <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+          <a href="/blog" class="font-bold">
+            blog/
+            <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+          </a>
+        </li>
+        <li class="before:content-['└───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+          <a href="/contact" class="font-bold">
+            contact/
+            <span class="block md:hidden font-normal">&nbsp;&emsp;└── index.html</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <main class="container flex flex-col gap-8 md:pt-32 pt-8">
     <div class="flex flex-col-reverse md:flex-row gap-8 justify-around items-center w-full">
       <h1 class="text-5xl uppercase text-center">The best way to learn <br /> is to <span
-          class="text-nord-7">teach</span></h1>
+          class="text-nord-8">teach</span></h1>
       <div class="flex flex-col items-center">
-        <img src="imgs/me.webp" alt="Me" width="250" class="rounded-full mb-2">
+        <div class="size-[250px] rounded-full bg-nord-11 mb-2"></div>
+        <!-- <img src="imgs/me.webp" alt="Me" width="250" class="rounded-full mb-2"> -->
         <p class="text-sm">Philip H.</p>
         <p class="text-sm">Developper.</p>
         <p class="text-sm">Educator.</p>
       </div>
     </div>
     <div class="mx-auto">
-      <button class="bg-nord-7 px-16 py-4 rounded-lg font-bold hover:bg-nord-8 hover:shadow-lg transition">
+      <button class="bg-nord-8 px-16 py-4 rounded-lg font-bold hover:bg-nord-7 hover:shadow-lg transition">
         <a href="/contact">
           Work with me
         </a>
@@ -42,7 +76,8 @@
   <section class="container my-32">
     <h2 class="flex justify-center items-center gap-4 text-4xl uppercase font-bold text-center mb-16">
       Timeline
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
       </svg>
 

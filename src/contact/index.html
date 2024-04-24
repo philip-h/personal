@@ -5,19 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/output.css">
-  <title>/usr/philiph/</title>
+  <title>/usr/philiph/contact/</title>
 </head>
 
 <body class="bg-nord-0 text-nord-6">
-  <nav class="h-16 flex justify-around box-border">
-    <a href="/"
-      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/</a>
-    <a href="/projects"
-      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/projects</a>
-    <a href="/blog"
-      class="px-4 h-bull flex items-center border-b-4 border-transparent hover:border-nord-7 transition">~/blog</a>
-    <a href="/contact" class="px-4 h-full flex items-center border-b-4 border-nord-7">~/contact</a>
+
+  <nav class="flex flex-col md:flex-row bg-nord-3 p-4 font-mono group">
+    <div class="flex justify-between">
+      <h2 class="font-mono text-2xl font-bold">
+        <a href="/" class="text-nord-8">PHILIPH.DEV/</a>
+      </h2>
+      <div class="rounded-full p-2 transition-transform group-hover:rotate-180 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6 pointer-events-none">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex-grow 
+          grid transition-[grid-template-rows] grid-rows-[0fr] group-hover:grid-rows-[1fr] md:grid-rows-1">
+
+      <ul class="flex flex-col md:flex-row justify-around
+            before:content-['.'] md:before:content-none overflow-hidden">
+        <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none">
+          <a href="/" class="hover:text-nord-8">index.html</a>
+        </li>
+        <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+          <a href="/projects" class="font-bold">
+            projects/
+            <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+          </a>
+        </li>
+        <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+          <a href="/blog" class="font-bold">
+            blog/
+            <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+          </a>
+        </li>
+        <li class="before:content-['└───'] before:text-nord-8 md:before:content-none text-nord-8">
+          <a href="/contact" class="font-bold">
+            contact/
+            <span class="block md:hidden font-normal">&nbsp;&emsp;└── index.html</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
+
 
   <main class="container flex flex-col gap-8 md:pt-32 pt-8">
     <div class="text-2xl sm:text-4xl flex items-center gap-4">
