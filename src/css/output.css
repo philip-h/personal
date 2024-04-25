@@ -655,6 +655,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
 }
@@ -705,10 +709,6 @@ video {
 
 .h-6 {
   height: 1.5rem;
-}
-
-.max-h-0 {
-  max-height: 0px;
 }
 
 .w-3 {
@@ -767,10 +767,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -815,14 +811,6 @@ video {
 .bg-nord-8 {
   --tw-bg-opacity: 1;
   background-color: rgb(136 192 208 / var(--tw-bg-opacity));
-}
-
-.stroke-nord-6 {
-  stroke: #ECEFF4;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-2 {
@@ -938,20 +926,8 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-\[colors\2c _transform\] {
-  transition-property: colors, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-\[grid-template-rows\] {
   transition-property: grid-template-rows;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-\[max-height\] {
-  transition-property: max-height;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -960,10 +936,6 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .before\:text-nord-8::before {
@@ -987,27 +959,9 @@ video {
   content: var(--tw-content);
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
-.hover\:bg-nord-4:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 222 233 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-nord-7:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(143 188 187 / var(--tw-bg-opacity));
-}
-
-.hover\:stroke-nord-3:hover {
-  stroke: #4C566A;
-}
-
-.hover\:text-nord-3:hover {
-  --tw-text-opacity: 1;
-  color: rgb(76 86 106 / var(--tw-text-opacity));
 }
 
 .hover\:text-nord-8:hover {
@@ -1034,10 +988,6 @@ video {
 
 .group:hover .group-hover\:grid-rows-\[1fr\] {
   grid-template-rows: 1fr;
-}
-
-.group:hover .group-hover\:grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 @media (min-width: 640px) {
