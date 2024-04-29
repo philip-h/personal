@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['src/**/*.html'],
+  content: ["./layouts/**/*.html", "./content/**/*.html"],
   theme: {
     container: {
       center: true,
@@ -27,7 +27,8 @@ module.exports = {
         'nord-15': '#B48EAD',
       }
     },
+
   },
-  plugins: [
-  ],
+  plugins: [],
 }
+

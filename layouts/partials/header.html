@@ -1,0 +1,41 @@
+<nav class="flex flex-col md:flex-row bg-nord-3 p-4 font-mono group">
+  <div class="flex justify-between">
+    <h2 class="font-mono text-2xl font-bold text-nord-8">
+      {{ site.Title }}
+    </h2>
+    <div class="transition-transform group-hover:rotate-180 md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6 pointer-events-none">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="flex-grow 
+        grid transition-[grid-template-rows] grid-rows-[0fr] group-hover:grid-rows-[1fr] md:grid-rows-1">
+    {{ with site.Menus.main }}
+    <ul class="flex flex-col md:flex-row md:items-center justify-around
+          before:content-['.'] md:before:content-none overflow-hidden">
+      {{ range . }}
+      {{ if $.IsMenuCurrent .Menu . }}
+      <li class="before:content-['├───'] before:text-nord-8 md:before:content-none text-nord-8">
+        <a href="{{ .URL }}" class="font-bold">
+          {{ .Name }}
+          {{ if not (eq .Name "index.html") }}
+          <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+          {{ end }}
+        </a>
+      </li>
+      {{ else }}
+      <li class="before:content-['├───'] hover:before:text-nord-8 md:before:content-none hover:text-nord-8">
+        <a href="{{ .URL }}" class="font-bold">
+          {{ .Name }}
+          <span class="block md:hidden font-normal">│&emsp;└── index.html</span>
+        </a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</nav>

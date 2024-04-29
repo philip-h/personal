@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="bg-nord-0 text-nord-6">
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <main class="container flex flex-col gap-8 md:pt-32 pt-8">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <section class="container my-32">
+    {{ block "timeline" . }}{{ end }}
+  </section>
+</body>
+
+</html>

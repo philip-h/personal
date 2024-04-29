@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1 class="text-3xl font-bold">Phil's Dev Blog</h1>
+{{ range .Pages }}
+<div class="bg-nord-3 p-4 rounded-lg">
+  <h2 class="mb-4"><a class="text-nord-8 underline text-xl" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ .Summary }}
+</div>
+{{ end }}
+{{ end }}
